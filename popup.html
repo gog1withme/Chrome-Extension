@@ -1,0 +1,55 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+    <title>Getting Started Extension's Popup</title>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popup.js"></script>   
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />  
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body style="width:400px;height:200px;">
+    <a> <h4 id="title" class="header-title">Daffodilsw Ltd.<span class="hide" id=title-link></span></h4></a>
+    <!--<div id="status"></div>
+    <img id="image-result" hidden>-->
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Applications</a></li>
+            <li><a data-toggle="tab" href="#upcoming">Upcoming</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <div class="container">
+                    <div class="row">
+                        <div id="active-applications-container" class="btn-group btn-group-justified">
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="upcoming" class="tab-pane fade">
+                <div class="container">
+                    <div class="row">
+                        <div id="upcoming-applications-container" class="btn-group btn-group-justified">
+                       
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    <br />
+  <p>gogi@run</p>
+</body>
+</html>
